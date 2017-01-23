@@ -1,56 +1,39 @@
-
-
-
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Login Form</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-    </head>
-    <body>
-        
-        <h1 style="text-align: center"> <br> Customer Login <br> </h1>
-        
-        <h3 style="text-align: center"> <br> <a href="signup_form.html">Signup</a><br> </h3>
+<head>
+    <meta charset="UTF-8">
+    <title>SC Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+</head>
+<body>
 
-        <form action="login.php" method="post">
+<h1 class="text-center"><br> Smoke Chat <br></h1>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+<h6 class="text-center"><br> Dont have an SC account? Signup <a href="signup_form.html">here!</a><br></h6>
+
+<div class="container">
+    <form action="login.php" method="post">
+
+        <div class="row">
+            <div class="col-xs-2 col-md-4"></div>
+            <div class="col-xs-8 col-md-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input name="pass" type="password" class="form-control" id="exampleInputPassword1"
+                           placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary center-block">Login</button>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-
-            <table style="display: table;" class="postForm hideMobile" id="postForm">
-                <tbody>
-                    <tr>
-                        <td>Email</td>
-                        <td><input name="email" type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td><input name="pass" type="password"></td>
-                    </tr>
-
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td>
-                            <input value="Login" type="submit">
-                        </td>
-
-                    </tr>
-
-                </tbody>
-
-            </table>
-        </form>
+            <div class="col-xs-2 col-md-4"></div>
+        </div>
 
 
+    </form>
 
-    </body>
+</div>
+
+</body>
 </html>
